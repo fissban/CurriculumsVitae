@@ -1,0 +1,102 @@
+h1 {
+    color: #666464 !important;
+}
+
+.top {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    background: rgb(51, 200, 61);
+    background: linear-gradient(132deg, rgba(51, 200, 61, 1) 0%, rgb(63, 139, 31) 96%);
+    top: 0;
+}
+
+.photo {
+    background-image: url('../img/photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*width: 30%;*/
+}
+
+.panel1 {
+    height: 205px;
+}
+
+.mt-6 {
+    margin-top: 5rem !important;
+}
+
+.icon-svg-social {
+    filter: invert(53%) sepia(12%) saturate(5327%) hue-rotate(94deg) brightness(31%) contrast(80%);
+}
+
+.icon-svg {
+    filter: invert(53%) sepia(12%) saturate(5327%) hue-rotate(94deg) brightness(91%) contrast(70%);
+}
+
+.icon-svg-false {
+    filter: invert(100%) sepia(2%) saturate(3014%) hue-rotate(39deg) brightness(93%) contrast(85%);
+}
+
+
+.vl {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 5px;
+    border: 1px solid rgb(201, 200, 200);
+    background-color: rgb(243, 243, 243);
+}
+
+.dialog1 {
+    font-size: small;
+    margin-right: 20px;
+    padding: 5px;
+    position: relative;
+    border-radius: 8px 8px 8px 8px;
+    min-width: 80%;
+    background-color: #ffffff;
+    -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+    filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+}
+
+.dialog1:after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 100%;
+    border-top: 20px solid #ffffff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transform: rotate(-90deg);
+    -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+    filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+}
+
+.dialog2 {
+    font-size: small;
+    margin-left: 20px;
+    padding: 5px;
+    position: relative;
+    border-radius: 8px 8px 8px 8px;
+    min-width: 80%;
+    background-color: #ffffff;
+    -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+    filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+}
+
+.dialog2:after {
+    content: "";
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 11px;
+    left: -20px;
+    border-top: 20px solid #ffffff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transform: rotate(90deg);
+    -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+    filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+}
