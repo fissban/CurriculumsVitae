@@ -60,11 +60,11 @@ h1 {
     filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
 }
 
-.dialog1:after {
+.dialog1::after {
     content: "";
     position: absolute;
     top: 11px;
-    left: 100%;
+    left: 99%;
     border-top: 20px solid #ffffff;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -72,7 +72,21 @@ h1 {
     -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
     filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
 }
-
+.dialog1::before
+{
+    content: "";
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 15px;
+    left: 106%;
+    border-top: 10px solid #2aa846;
+    border-right: 10px solid transparent;
+    transform: rotate(90deg);
+    filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+    border-radius: 40px;
+}
 .dialog2 {
     font-size: small;
     margin-left: 20px;
@@ -85,18 +99,33 @@ h1 {
     filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
 }
 
-.dialog2:after {
+.dialog2::after {
     content: "";
     height: 0;
     width: 0;
     pointer-events: none;
     position: absolute;
     top: 11px;
-    left: -20px;
+    left: -18px;
     border-top: 20px solid #ffffff;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     transform: rotate(90deg);
     -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
     filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+}
+.dialog2::before
+{
+    content: "";
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 15px;
+    left: -28px;
+    border-top: 10px solid #2aa846;
+    border-right: 10px solid transparent;
+    transform: rotate(90deg);
+    filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+    border-radius: 40px;
 }
