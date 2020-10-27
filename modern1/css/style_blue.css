@@ -73,3 +73,32 @@ hr {
     /*border-radius: 10px;*/
     filter: invert(100%);
 }
+
+.vl {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 5px;
+    border: 1px solid rgb(201, 200, 200);
+    background-color: rgb(243, 243, 243);
+}
+
+.vl::after {
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    left: 49.1%;
+    border-top: 10px solid #1c78d0;
+    border-right: 11px solid transparent;
+    transform: rotate(90deg);
+    filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, .15));
+    border-radius: 40px;
+}
+
+.col-especial {
+    flex: 0 0 25%;
+    max-width: 5%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
